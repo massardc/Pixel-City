@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  MapVC
 //  Pixel City
 //
-//  Created by School on 08/11/2017.
+//  Created by ClementM on 08/11/2017.
 //  Copyright © 2017 ClementM. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MapVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
