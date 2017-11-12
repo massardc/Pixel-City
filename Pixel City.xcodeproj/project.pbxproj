@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A99D2B1920BD0296F5B69B7E /* Pods_Pixel_City.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B024563F8CA7F14213D2CA4F /* Pods_Pixel_City.framework */; };
+		BF8D1D7F1FB8E790002C9742 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D1D7E1FB8E790002C9742 /* DroppablePin.swift */; };
 		BFBD52051FB3AEB8004A8AE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD52041FB3AEB8004A8AE4 /* AppDelegate.swift */; };
 		BFBD52071FB3AEB8004A8AE4 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD52061FB3AEB8004A8AE4 /* MapVC.swift */; };
 		BFBD520A1FB3AEB8004A8AE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBD52081FB3AEB8004A8AE4 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		535A03FA74097792778FBB08 /* Pods-Pixel City.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixel City.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pixel City/Pods-Pixel City.debug.xcconfig"; sourceTree = "<group>"; };
 		B024563F8CA7F14213D2CA4F /* Pods_Pixel_City.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixel_City.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8D1D7E1FB8E790002C9742 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		BFBD52011FB3AEB8004A8AE4 /* Pixel City.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel City.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBD52041FB3AEB8004A8AE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFBD52061FB3AEB8004A8AE4 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		BFBD52171FB3AF27004A8AE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF8D1D7E1FB8E790002C9742 /* DroppablePin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFBD52071FB3AEB8004A8AE4 /* MapVC.swift in Sources */,
+				BF8D1D7F1FB8E790002C9742 /* DroppablePin.swift in Sources */,
 				BFBD52051FB3AEB8004A8AE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,7 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V836JU6J3D;
 				INFOPLIST_FILE = "Pixel City/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clementm.Pixel-City";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -402,7 +406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V836JU6J3D;
 				INFOPLIST_FILE = "Pixel City/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clementm.Pixel-City";
 				PRODUCT_NAME = "$(TARGET_NAME)";
