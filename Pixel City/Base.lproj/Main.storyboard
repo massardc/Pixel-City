@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFA-WX-nsE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8T-qE-KWh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
@@ -47,7 +48,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbW-hX-Mm4">
-                                <rect key="frame" x="325" y="617" width="50" height="50"/>
+                                <rect key="frame" x="305" y="596" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="FYm-wD-Gfx"/>
                                     <constraint firstAttribute="height" constant="50" id="Lr5-U2-7ia"/>
@@ -58,22 +59,24 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkE-4P-EaC">
-                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="mo8-7h-gax"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UFA-WX-nsE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Pz-zJ-JKd"/>
                             <constraint firstItem="UFA-WX-nsE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Gy3-Xb-D1r"/>
                             <constraint firstItem="i8T-qE-KWh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RQh-ll-Mad"/>
                             <constraint firstItem="PkE-4P-EaC" firstAttribute="top" secondItem="UFA-WX-nsE" secondAttribute="bottom" id="ZV2-xX-kMR"/>
                             <constraint firstItem="PkE-4P-EaC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a61-Co-9jq"/>
                             <constraint firstItem="UFA-WX-nsE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cGz-BU-233"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RbW-hX-Mm4" secondAttribute="trailing" id="gZZ-QR-UZl"/>
+                            <constraint firstItem="PkE-4P-EaC" firstAttribute="top" secondItem="RbW-hX-Mm4" secondAttribute="bottom" constant="20" id="f7j-a1-wTO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RbW-hX-Mm4" secondAttribute="trailing" constant="20" id="gZZ-QR-UZl"/>
                             <constraint firstItem="UFA-WX-nsE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ic8-hs-V7X"/>
                             <constraint firstItem="PkE-4P-EaC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oza-Wn-hV6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RbW-hX-Mm4" secondAttribute="bottom" id="v3O-9b-zKQ"/>
                             <constraint firstItem="PkE-4P-EaC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xiK-TG-pZn"/>
                             <constraint firstItem="i8T-qE-KWh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="y28-1j-hrv"/>
                             <constraint firstItem="i8T-qE-KWh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yhS-hA-WPs"/>
@@ -82,6 +85,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="UFA-WX-nsE" id="PXq-QE-oru"/>
+                        <outlet property="pullUpView" destination="PkE-4P-EaC" id="OEv-ic-jyp"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="mo8-7h-gax" id="Olp-ZI-XSx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
